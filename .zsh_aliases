@@ -1,0 +1,18 @@
+alias vi='vim'
+alias zrc='vim ~/.zshrc'
+alias zal='vim ~/.zsh_aliases'
+alias edvim='vim ~/.vimrc'
+alias edmux='vim ~/.tmux.conf'
+
+
+alias apup='sudo apt-get update && sudo apt-get upgrade'
+alias apin='sudo apt-get install'
+alias aps='apt search'
+
+alias top='htop'
+
+
+
+alias l='ls'
+alias ll='ls -a'
+
