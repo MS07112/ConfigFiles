@@ -29,7 +29,7 @@ fi
 local return_code="%(?..%F{red}%? ↵%f)"
 
 local user_host="${PR_USER}%F{white}"
-local current_dir="%B%F{blue}%~%f%b"
+local current_dir="%B%~%b"
 local rvm_ruby=''
 if ${HOME}/.rvm/bin/rvm-prompt &> /dev/null; then # detect user-local rvm installation
   rvm_ruby='%F{red}‹$(${HOME}/.rvm/bin/rvm-prompt i v g s)›%f'
