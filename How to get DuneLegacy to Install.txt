@@ -1,0 +1,18 @@
+Replace 'FLUIDSYNTH' with 'MID' in XMIPlayer.cpp and DirectoryPlayer.cpp files located in src/FileNames/music/ subdirectory.
+
+Copy all DUNE 2 .PAK files into data subdirectory (if only 3-4 .PAK files currently exist in data: you have to acquire the rest from elsewhere online).
+
+Run ./configure
+
+Run make
+sudo make install
+
+
+== Most Important Part ==
+
+Copy all .PAK files from the data subdirectory into the ~/.config/dunelegacy/data directory. Otherwise executing 'dunelegacy' in the terminal will just terminate without any explanation.
+
+-- The reason for this is the system is looking for the .PAK files in this directory, regardless of where in /usr/local/share (or wherever) the .PAK files are supposedly installed.
+
+
+Additionally, copying these files to the /root/.config/dunelegacy/data directory is also a good idea. Just in case the installation specifies that as the place to look for the .PAK files.
